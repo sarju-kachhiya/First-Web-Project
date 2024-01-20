@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTracker</title>
+    <style>
+      .header .container-fluid{
+            width: 100%;
+            padding: 0 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+      #HeaderIcon{
+                color: whitesmoke;
+                justify-content: space-around;
+            }
+      .socialHeader:hover{
+                color: #6D7A80;
+            }
+            .active{
+               text-decoration: underline;
+            }
+            .comp{
+                display: inline-block;
+                justify-content: left;
+                font-size: 25px;
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: 200px;
+            }
+            .navitems:hover{
+                text-decoration: wavy;
+                color: #122932;
+                box-sizing: border-box;
+                border-radius: 5px;
+                border: 3px solid white;
+                background-color: goldenrod;
+                
+            }
+            .text h2{
+                font-family: 'Archivo Black', sans-serif;
+                padding-top: 175px ;
+                padding-left: 60px;
+                padding-bottom: 0;
+                color: #244096;
+            }
+            .text p{
+                font-size: 18px;
+                padding-top: 0  ;
+                padding-left: 60px;
+                color: #283C45;
+            }
+            .image1{
+                padding-top: 175px;
+                display: flex;
+                justify-content: center;
+            }
+            .slider1{
+                width: 100%;
+                height: 120vh;
+                display: grid;
+                place-items: center;
+            }
+            .slider2{
+                width: 60%;
+                height: 600px;
+                background-image: url(photo1.jpg);
+                background-size: 100% 100%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                animation: changeimage 20s linear infinite;
+            }
+            #para1{
+                font-size: 28px;
+                border-right: 5px solid #283C45;
+        
+            }
+            #para2{
+                font-family: 'Nunito Sans', sans-serif;
+                font-size: 30px;
+                padding-top: 30px;
+            }
+            .card:hover{
+                transform: scale(1.03);
+            }
+            .card{
+                transition: transform .2s;
+            }
+
+          
+@media (max-width: 858px) {
+    .header .container-fluid {
+        padding: 0 20px; 
+    }
+
+    #HeaderIcon {
+        margin-left: 20px; 
+    }
+
+    .socialHeader {
+        margin-left: 20px; 
+    }
+
+    .comp {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    .text h2,
+    .text p {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .image1 {
+        padding-top: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .slider1 {
+        height: 80vh; /* Adjust height for smaller screens */
+    }
+
+    .slider2 {
+        width: 100%;
+    }
+    #para1{
+        padding-top: 100px;
+    }
+    #para2{
+        padding-left: 40px;
+    }
+    #para1,
+    #para2 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        
+    }
+
+    .row-cols-1,
+    .row-cols-md-3 {
+        margin-left: 10px;
+        margin-right: 10px; /* Adjust margins for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .header .container-fluid {
+        padding: 0 20px;
+    }
+
+    .nav-logo img {
+        margin-left: 10px;
+    }
+
+    .comp {
+        margin-right: 10px;
+    }
+
+    .navitems {
+        margin-right: 15px;
+    }
+
+    .slider1 {
+        height: 80vh;
+    }
+
+    .text h2,
+    .text p {
+        padding-left: 20px;
+    }
+
+    .image1 img {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+    #para1{
+        padding-top: 100px;
+    }
+    #para2{
+        padding-left: 40px;
+    }
+
+
+    #para1,
+    #para2 {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+}
+
+            @keyframes changeimage{
+                0%{
+                    background-image: url(photo1.jpg);
+                }
+                25%{
+                    background-image: url(photo2.jpg);
+                }
+                50%{
+                    background-image: url(photo3.jpg);
+                }
+                75%{
+                    background-image: url(photo1.jpg);
+                }
+                100%{
+                    background-image: url(photo2.jpg);
+                }
+
+            }
+            
+    </style>
+    <link rel="icon" href="alterlogo7.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="font-family: 'Fjalla One', sans-serif;
+overflow-x: hidden;">
+    <header class="" style=" width: 100vw; height: 100px; box-shadow: 0px 3px 8px rgb(144, 123, 123); width: 100%; height: 100%; display: flex;">
+        <div class="container-fluid fixed-top" style="background-color: #122932; padding-bottom: 10px;
+         box-shadow: 0px 3px 8px rgb(144, 123, 123);
+         width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+         ">
+            <div class="col-xxl-4">
+                <div class="row">
+                <div class="nav-logo">
+                    <img src="alterlogo7.png" alt="" width="70px" style="padding-top: 10px; margin-left: 45px;">
+                    <p style="font-family: 'Kaushan Script', cursive; color: goldenrod; font-size: 25px;">Expense Tracker</p>
+                </div>
+            </div>
+            <div class="col-xxl-8">
+                <div class="row">
+                <div class="col-lg-6" id="HeaderIcon" style="justify-content: space-between; position: fixed; top: 0; right: 20px;
+                width: 100%;
+                z-index: 100;">
+
+                    <div class="socialHeader d-none d-lg-block" style="display: inline-block; top: 0; right: 0; margin-left: 400px; margin-top:30px; margin-right: 0; padding-right: 0;">
+                        <a class="icons" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #6D7A80; margin-right: 20px; :hover{color: white;}"></i></a>
+                        <a class="icons" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #6D7A80; margin-right: 20px;"></i></a>
+                        <a class="icons" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #6D7A80; margin-right: 20px;"></i></a>
+                        <a class="icons" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color: #6D7A80; margin-right: 20px;"></i></a>
+                    </div>
+
+                    <nav class="comp nav-menu d-none d-lg-block" >
+                
+                        <a href="#" class="navitems active" style="color: white; margin-right: 30px;  padding: 5px;">Home</a>
+                        <a href="about.html" class="navitems" style="color: white; margin-right: 30px;  padding: 5px;">About Us</a>
+                        <a href="contact.html" class="navitems" style="color: white; margin-right: 30px;  padding: 5px;">Contact Us</a>
+                    </nav>
+                    
+                 </div>
+               </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-xl-7 text" >
+                <h2>Track Your Expense,</h2>
+                <p>Regularly monitor your spending fosters better financial awareness, control, and budget accountability,ensuring responsible budgeting to meet financial goals.Consistently logging expenses and organizing them into categories enhances financial awareness. Establishing spending limits systematically contributes to achieving financial objectives. Leveraging technology for efficient tracking and analyzing patterns identify areas for improvement. Maintaining a budget buffer ensures readiness for unexpected expenses and emergencies. <br></p>            
+                <p>Adding more,Set spending limits systematically to achieve financial objectives. Simultaneously, evaluate spending patterns to discover potential areas for savings or improvements in your financial management strategy.</p>
+            </div>  
+            <div class="col-xl-5 image1" >
+                <img src="image1.jpg"   alt="image" width="60%" >
+            </div>
+        </div>
+        <div class="slider1">
+            <div class="slider2">
+                
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xl-6" id="para1">
+                    <p style="margin-left: 15px;">
+                        An expense tracker is a valuable tool for individuals and businesses to monitor and manage financial transactions.Expense trackers are vital for managing finances efficiently and making informed budget decisions.
+                    </p>
+                </div>
+                <div class="col-xl-6" id="para2">
+                    <p>We are <b>committed</b> to providing our clients the best services.</p>
+                </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 30px; margin-left: 20px; margin-right: 20px;">
+            <div class="col">
+              <div class="card h-100">
+                <img src="card1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Daily Commuting Costs</h5>
+                  <p class="card-text">Middle-class individuals working 9 to 5 often incur expenses related to daily commuting, including fuel, public transportation, or parking fees.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="card2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Work-Related Meals and Snacks</h5>
+                  <p class="card-text">Lunches, snacks, and coffee during work hours contribute to daily expenses. Tracking these costs helps individuals budget for meals, make healthier.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Work Expenses</h5>
+                  <p class="card-text">Maintaining a professional appearance for a 9 to 5 job may involve costs related to work attire, dry cleaning, or professional memberships.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+      </main>
+      <footer style="background-color: #122932;
+       box-shadow: 0px 3px 8px rgb(144, 123, 123);">
+        <div class="row">
+            <div class="col-xl-4 footerlogo" >
+                <img src="alterlogo7.png" alt="" style="width: 160px; height: 160px; margin-left: 170px; margin-top: 30px;">
+            </div>
+            <div class="col-xl-8" >
+                <div style="margin-left: 80px; margin-top: 50px; margin-bottom: 50px;">
+                <p style="color: white;">Navigation Menu</p>
+                <ul class="ftnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+                <a href="mailto:contact@gmail.com">Email:- Contact@email.com</a><br>
+
+                <div class="socialft d-none d-lg-block" style="display: inline-block; top: 0; right: 0; margin-left: 800px;">
+                    <a class="icons" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #6D7A80; margin-right: 20px; :hover{color: white;}"></i></a>
+                    <a class="icons" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: #6D7A80; margin-right: 20px;"></i></a>
+                    <a class="icons" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #6D7A80; margin-right: 20px;"></i></a>
+                    <a class="icons" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color: #6D7A80; margin-right: 20px;"></i></a>
+                </div>
+            </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
